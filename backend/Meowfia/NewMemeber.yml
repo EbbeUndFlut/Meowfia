@@ -1,0 +1,23 @@
+info:
+  name: NewMemeber
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:8989/api/members
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Don Schnurrhaar",
+        "rank": "Don",
+        "speciality": "Öffnet Dosen ohne Werkzeug"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
